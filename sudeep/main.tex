@@ -1,18 +1,15 @@
 %!TEX TS-program = xelatex
-% * <sudeepinfrontofpc@gmail.com> 2017-11-30T16:55:04.012Z:
-%
-% ^.
 %!TEX encoding = UTF-8 Unicode
 %
 % Author:
 % Sudeep G <sudeepg95@gmail.com>
 %
-
+% AUTO-GENERATED personal info — edit resume/src/data/sudeep-cv.ts then run:
+%   npm run sync:to-latex   (from resume/ directory)
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
@@ -22,68 +19,39 @@
 \fontdir[fonts/]
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-skyblue}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
-% If you would like to change the social information separator from a pipe (|) to something else
+% Social information separator
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+%	AUTO-GENERATED — edit resume/src/data/sudeep-cv.ts
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
 \name{}{Sudeep G}
-\position{Senior Consultant}
+\position{Lead Software Engineer | AI-Enabled Engineering}
 \address{Bengaluru, India}
 
 \mobile{(+91) 9020709002}
 \email{sudeepg95@gmail.com}
-% \homepage{www.posquit0.com}
 \github{sudeepg95}
 \linkedin{sudeepg95}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{sudeepg95}
-% \reddit{reddit-id}
-% \extrainfo{extra informations}
-
-% \quote{``Be the change that you want to see in the world."}
-
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal information
-% Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
   {Sudeep~~~·~~~Resume}
   {\thepage}
 
-
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{subtopics/summary.tex}
 \input{subtopics/skills.tex}
